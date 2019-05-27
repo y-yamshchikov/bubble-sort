@@ -1,4 +1,5 @@
 #!/bin/bash
-g++ -c bubble.cpp
-g++ -o example bubble.o
+mv example old_example
+g++ -c bubble.cpp -std=c++17
+g++ -o example bubble.o -std=c++17
 
