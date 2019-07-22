@@ -2,6 +2,7 @@
 
 void print_array(int *A, size_t size);
 void bubble_sort(int *A, size_t size);
+void swap(int &A, int &B);
 
 int main(int argc, char *argv[])
 {
@@ -36,4 +37,11 @@ void bubble_sort(int *A, size_t size)
 			}
 		}
 	}
+}
+
+void swap(int &A, int &B)
+{
+	int C = B;
+	B = A;
+	A = C;
 }
